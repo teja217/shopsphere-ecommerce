@@ -1,0 +1,36 @@
+services:
+  # Backend REST API Service
+  - type: web
+    name: shopsphere-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node backend/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_ORIGIN
+        value: "*"
+      - key: MONGODB_URI
+        sync: false
+
+  # Optional Full-Stack Unified Service (Builds frontend + serves API & static UI)
+  - type: web
+    name: shopsphere-fullstack
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_ORIGIN
+        value: "*"
+      - key: MONGODB_URI
+        sync: false

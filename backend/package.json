@@ -1,0 +1,19 @@
+{
+  "name": "shopsphere-backend",
+  "version": "1.0.0",
+  "description": "ShopSphere REST API Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.8.4",
+    "morgan": "^1.10.0"
+  }
+}
