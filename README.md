@@ -19,7 +19,7 @@
 | **Frontend Application** | Vercel / Netlify | `https://shopsphere-catalog.vercel.app` *(or your deployed Vercel/Netlify URL)* | ![Online](https://img.shields.io/badge/Status-Live-emerald) |
 | **Backend REST API** | Render Cloud | `https://shopsphere-api.onrender.com/api` *(or your deployed Render URL)* | ![Online](https://img.shields.io/badge/Status-Live-emerald) |
 | **API Health Check** | Render Cloud | `https://shopsphere-api.onrender.com/api/health` | ![Healthy](https://img.shields.io/badge/Health-200_OK-blue) |
-| **Source Code Repository**| GitHub | `https://github.com/your-username/shopsphere-ecommerce` | ![Git](https://img.shields.io/badge/Repo-GitHub-black) |
+| **Source Code Repository**| GitHub | `https://github.com/teja217/shopsphere-ecommerce` | ![Git](https://img.shields.io/badge/Repo-GitHub-black) |
 
 ---
 
